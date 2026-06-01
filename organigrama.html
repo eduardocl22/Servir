@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERVIR – Organigrama y Planificación Estratégica</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.slide-in{
+  transform:translateX(80px);
+  opacity:0;
+  transition:all .8s cubic-bezier(.77,0,.18,1);
+}
+.slide-in.show{
+  transform:translateX(0);
+  opacity:1;
+}
+</style>
+</head>
+
+<body class="bg-[#0f172a] min-h-screen flex flex-col text-white">
+
+<nav class="bg-black w-full fixed top-0 z-10">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <img src="images/Logo.png" alt="Logo SERVIR" class="h-10 w-10 rounded-lg shadow">
+      <span class="font-extrabold text-green-400 text-xl">SERVIR</span>
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <a href="index.html" class="text-white font-semibold hover:text-green-300">Inicio</a>
+      <span class="border-r border-gray-500 h-6"></span>
+      <a href="organigrama.html" class="text-white font-semibold border-b-2 border-green-400 pb-1">Organigrama y Planificación Estratégica</a>
+      <span class="border-r border-gray-500 h-6"></span>
+      <a href="acerca.html" class="text-white font-semibold hover:text-green-300">Acerca de</a>
+      <span class="border-r border-gray-500 h-6"></span>
+      <a href="cambio.html" class="text-white font-semibold hover:text-green-300">Cambio Organizacional</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pt-24"></div>
+
+<section class="max-w-5xl mx-auto px-4 py-8">
+  <div class="bg-[#166534] rounded-t-xl px-6 py-6 flex items-center justify-center space-x-4 slide-in">
+    <h2 class="text-3xl font-bold">Organigrama Organizacional</h2>
+  </div>
+
+  <div class="bg-white rounded-b-xl flex flex-col items-center p-4 slide-in">
+    <img src="images/organigrama.png" alt="Organigrama SERVIR" class="rounded-xl shadow-lg max-w-full">
+    <p class="text-gray-700 mt-4 font-semibold">Estructura organizacional de SERVIR</p>
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 py-10">
+
+<h2 class="text-2xl font-bold text-green-400 mb-8 text-center">Planeación Estratégica</h2>
+
+<div class="flex flex-col md:flex-row gap-6 mb-8">
+
+<div class="flex-1 bg-slate-800 rounded-2xl shadow-lg p-6 slide-in">
+<h3 class="text-xl font-extrabold text-green-400 mb-3 text-center">Misión</h3>
+<p class="text-center">
+Brindar capacitación gratuita y accesible a jóvenes, emprendedores y personas en búsqueda de superación personal, mediante cursos técnicos y formativos que promuevan el desarrollo profesional, el liderazgo y los valores humanos, contribuyendo al crecimiento social y económico de la comunidad.
+</p>
+</div>
+
+<div class="flex-1 bg-slate-800 rounded-2xl shadow-lg p-6 slide-in">
+<h3 class="text-xl font-extrabold text-green-400 mb-3 text-center">Visión</h3>
+<p class="text-center">
+Ser una institución referente en formación gratuita y desarrollo integral en Bolivia, reconocida por transformar vidas a través de la educación, el emprendimiento y el fortalecimiento de valores en la comunidad.
+</p>
+</div>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl shadow-lg p-8 max-w-3xl mx-auto slide-in">
+<h3 class="text-2xl font-extrabold text-green-400 mb-4 text-center">Valores</h3>
+
+<ul class="list-disc ml-6 space-y-3">
+<li><b>Servicio:</b> Ayudar a la comunidad mediante oportunidades de aprendizaje y crecimiento.</li>
+<li><b>Compromiso:</b> Actuar con responsabilidad y dedicación para generar impacto positivo.</li>
+<li><b>Solidaridad:</b> Promover el apoyo mutuo entre estudiantes, docentes y aliados.</li>
+<li><b>Integridad:</b> Mantener principios éticos, honestidad y transparencia.</li>
+<li><b>Superación Personal:</b> Impulsar el crecimiento continuo de las personas.</li>
+</ul>
+</div>
+
+</section>
+
+<section class="max-w-5xl mx-auto px-4 py-10">
+
+<h2 class="text-2xl font-bold text-green-400 mb-8 text-center">
+Objetivos Institucionales
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<div class="bg-slate-800 rounded-2xl p-6 slide-in">
+Incrementar en un 30% la participación de nuevos estudiantes durante la gestión 2026 mediante campañas digitales.
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 slide-in">
+Publicar al menos 12 contenidos audiovisuales para fortalecer el posicionamiento digital de SERVIR.
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 slide-in">
+Lograr un alcance mínimo de 1.000 personas mediante la campaña #CreceCruz.
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 slide-in">
+Incorporar al menos 3 nuevas alianzas con organizaciones o voluntarios.
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 md:col-span-2 slide-in">
+Capacitar a un mínimo de 100 participantes en cursos técnicos y de emprendimiento durante la gestión 2026.
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-black py-6 mt-auto">
+<div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+<span>&copy; 2026 <span class="text-green-400 font-bold">SERVIR</span>. Todos los derechos reservados.</span>
+<span>Institución de capacitación gratuita y desarrollo personal.</span>
+<a href="#" class="text-green-400 underline">Contacto institucional</a>
+</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+ const slideEls=document.querySelectorAll('.slide-in');
+ const observer=new IntersectionObserver((entries,obs)=>{
+   entries.forEach(entry=>{
+     if(entry.isIntersecting){
+       entry.target.classList.add('show');
+       obs.unobserve(entry.target);
+     }
+   });
+ },{threshold:0.15});
+ slideEls.forEach(el=>observer.observe(el));
+});
+</script>
+
+</body>
+</html>

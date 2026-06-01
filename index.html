@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SERVIR – Cursos Gratuitos con Propósito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .slide-in {
+      transform: translateX(80px);
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.77,0,0.18,1);
+    }
+
+    .slide-in.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0f172a] min-h-screen flex flex-col text-white">
+
+  <!-- NAVBAR -->
+  <nav class="bg-black w-full fixed top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <div class="flex items-center space-x-2">
+        <img src="images/Logo.png" alt="Logo SERVIR" class="h-10 w-10 rounded-lg shadow">
+        <span class="font-extrabold text-green-400 text-xl">SERVIR</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="index.html"
+           class="text-white text-base font-semibold border-b-2 border-green-400 pb-1">
+          Inicio
+        </a>
+
+        <span class="border-r border-gray-500 h-6"></span>
+
+        <a href="organigrama.html"
+           class="text-white text-base font-semibold hover:text-green-300 transition duration-300">
+          Organigrama y Planificación Estratégica
+        </a>
+
+        <span class="border-r border-gray-500 h-6"></span>
+
+        <a href="acerca.html"
+           class="text-white text-base font-semibold hover:text-green-300 transition duration-300">
+          Acerca de
+        </a>
+
+        <span class="border-r border-gray-500 h-6"></span>
+
+        <a href="cambio.html"
+           class="text-white text-base font-semibold hover:text-green-300 transition duration-300">
+          Cambio Organizacional
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="pt-24"></div>
+
+  <!-- HERO CENTRADO -->
+  <header class="max-w-4xl mx-auto px-4 py-20 text-center">
+
+    <div class="space-y-6 slide-in" id="hero-text">
+
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+
+        Institución de
+
+        <span class="text-green-400">
+          Capacitación Gratuita
+        </span>
+
+        <br>
+
+        y Desarrollo Personal
+
+        <br>
+
+        <span class="text-green-400">
+          SERVIR
+        </span>
+
+      </h1>
+
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        SERVIR es una institución dedicada a brindar capacitación gratuita,
+        emprendimiento y desarrollo personal para jóvenes y adultos,
+        promoviendo el crecimiento profesional, el liderazgo y los valores humanos
+        para contribuir al desarrollo social y económico de la comunidad.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+
+        <a href="#"
+           class="px-6 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 hover:-translate-y-1 hover:scale-105 transition-all duration-300">
+          Conoce nuestros cursos
+        </a>
+
+        <a href="#"
+           class="px-6 py-3 bg-green-600 text-white rounded-full font-semibold shadow hover:bg-green-700 hover:-translate-y-1 hover:scale-105 transition-all duration-300">
+          Más información
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- SERVICIOS -->
+  <section class="max-w-4xl mx-auto px-4 py-10">
+
+    <h2 class="text-2xl font-bold text-green-400 mb-6 text-center">
+      ¿Qué ofrece SERVIR?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div id="func-1" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Marketing y Negocios</h3>
+        <p class="text-gray-300">
+          Capacitación para emprendedores en marketing digital,
+          ventas, posicionamiento y estrategias comerciales.
+        </p>
+      </div>
+
+      <div id="func-2" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Instalación de Cámaras de Seguridad</h3>
+        <p class="text-gray-300">
+          Formación técnica para instalación,
+          configuración y mantenimiento de sistemas de seguridad.
+        </p>
+      </div>
+
+      <div id="func-3" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Bioquímica y Farmacia</h3>
+        <p class="text-gray-300">
+          Introducción práctica al área farmacéutica y conocimientos fundamentales de bioquímica.
+        </p>
+      </div>
+
+      <div id="func-4" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Mecánica Básica</h3>
+        <p class="text-gray-300">
+          Capacitación técnica orientada al mantenimiento y reparación mecánica básica.
+        </p>
+      </div>
+
+      <div id="func-5" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Decoración con Globos</h3>
+        <p class="text-gray-300">
+          Curso creativo orientado a eventos, celebraciones y emprendimientos decorativos.
+        </p>
+      </div>
+
+      <div id="func-6" class="bg-black/80 rounded-xl shadow p-5 slide-in transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-green-400">
+        <h3 class="text-lg font-semibold text-green-400">Liderazgo y Desarrollo Personal</h3>
+        <p class="text-gray-300">
+          Formación basada en liderazgo, emprendimiento, motivación personal y valores humanos.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm space-y-2 md:space-y-0">
+
+      <span>
+        &copy; 2026
+        <span class="font-bold text-green-400">SERVIR</span>.
+        Todos los derechos reservados.
+      </span>
+
+      <span>
+        Proyecto académico universitario.<br>
+        Institución de capacitación gratuita y desarrollo personal.
+      </span>
+
+      <a href="#" class="text-green-400 underline hover:text-green-200 transition">
+        Contacto institucional
+      </a>
+
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+
+      document.getElementById("hero-text").classList.add("show");
+
+      for(let i = 1; i <= 6; i++) {
+        setTimeout(() => {
+          document.getElementById("func-" + i).classList.add("show");
+        }, 500 + i * 150);
+      }
+
+    });
+  </script>
+
+</body>
+</html>
